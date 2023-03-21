@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>AssignmentClustering</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>spantus</id>
+            <name>spantus sourceforge</name>
+            <url>https://bio.informatik.uni-jena.de/repository/libs-release-oss/Links to an external site.</url>
+        </repository>
+        <repository>
+            <id>java-ds</id>
+            <url>https://raw.githubusercontent.com/alexeygrigorev/maven-repo/master/Links to an external site.</url>
+        </repository>
+    </repositories>
+
+
+    <!-- https://mvnrepository.com/artifact/net.sourceforge/javamlLinks to an external site. -->
+    <dependency>
+        <groupId>net.sourceforge</groupId>
+        <artifactId>javaml</artifactId>
+        <version>0.1.7</version>
+    </dependency>
+    <dependency>
+        <groupId>be.abeel</groupId>
+        <artifactId>ajt</artifactId>
+        <version>2.9</version>
+    </dependency>
+
+
+    <plugin>
+        <configuration>
+            <archive>
+                <manifest>
+                    <addClasspath>true</addClasspath>
+                    <mainClass>com.ontariotechu.sofe3980U.App</mainClass>
+                </manifest>
+            </archive>
+        </configuration>
+    </plugin>
+
+
+
+
+</project>
